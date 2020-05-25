@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/linear_placed_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/ic_speaker_notes"
+            android:tint="@color/colorDarkGray1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placed"
+            android:textSize="16sp"
+            android:textColor="@color/colorDarkGray1"
+            android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorDarkGray"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_shipping_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/ic_local_shipping"
+            android:tint="@color/colorDarkGray1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shipping"
+            android:textSize="16sp"
+            android:textColor="@color/colorDarkGray1"
+            android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorDarkGray"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <LinearLayout
+    android:id="@+id/linear_shipped_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_done_shipped"
+        android:tint="@color/colorDarkGray1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shipped"
+        android:textSize="16sp"
+        android:textColor="@color/colorDarkGray1"
+        android:layout_gravity="center_vertical"/>
+
+
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorDarkGray"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_cancelled_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/ic_cancelled"
+            android:tint="@color/colorDarkGray1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelled"
+            android:textSize="16sp"
+            android:textColor="@color/colorDarkGray1"
+            android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorDarkGray"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+
+
+</LinearLayout>

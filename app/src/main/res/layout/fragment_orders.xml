@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.orders.OrdersFragment">
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmer_layout_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_animation_duration="1200">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+            <include layout="@layout/raw_place_holder"/>
+
+        </LinearLayout>
+
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    <TextView
+        android:id="@+id/txt_order_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order placed (0)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorButton"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_speaker_notes"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_order_filter"/>
+
+</RelativeLayout>

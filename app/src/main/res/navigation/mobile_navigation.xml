@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_category">
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="ahmet.com.eatitserver.ui.categories.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category"></fragment>
+<!--
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="ahmet.com.eatitserver.ui.categores.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_category" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+-->
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="ahmet.com.eatitserver.ui.food.FoodFragment"
+        android:label="@string/menu_food"
+        tools:layout="@layout/fragment_food">
+
+        <action android:id="@+id/clear_backstack_food"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_category"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="ahmet.com.eatitserver.ui.orders.OrdersFragment"
+        android:label="@string/menu_ordes"
+        tools:layout="@layout/fragment_orders">
+
+        <action android:id="@+id/clear_backstack_orders"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_category"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_shipper"
+        android:name="ahmet.com.eatitserver.ui.shipper.ShipperFragment"
+        android:label="@string/menu_shipper"
+        tools:layout="@layout/fragment_shippers">
+
+        <action android:id="@+id/clear_backstack_orders"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_category"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_best_deal"
+        android:name="ahmet.com.eatitserver.ui.best_deals.BestDealsFragment"
+        android:label="@string/menu_best_deal"
+        tools:layout="@layout/fragment_best_deals">
+
+        <action android:id="@+id/clear_backstack_orders"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_category"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_most_popular"
+        android:name="ahmet.com.eatitserver.ui.most_popular.MostPopularFragment"
+        android:label="@string/menu_most_popular"
+        tools:layout="@layout/fragment_most_popular">
+
+        <action android:id="@+id/clear_backstack_orders"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_category"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+</navigation>
